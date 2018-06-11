@@ -20,12 +20,13 @@ puts "and #{number2}"
 puts "what kind of operation do you want to perform? addition (1), subtraction (2), multiplication (3) or division (4)?"
 operation = gets.chomp
 
-if operation == "addition"
+case operation
+when "1"
   puts number1 + number2
-elsif operation == "subtraction"
+when "2"
   puts number1 - number2
-elsif operation == "multiplication"
+when "3"
   puts number1 * number2
-elsif operation == "division"
+when "4"
   puts number1 / number2
 end
